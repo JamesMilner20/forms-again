@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+
+  <div class="container">
+    <ul class="nav nav-tabs row container" role="tablist">
+      <li class="nav-item col-md-2">
+        <a class="nav-link active" data-toggle="tab" href="#home">Personal Information</a>
+      </li>
+      <li class="nav-item col-md-2">
+        <a class="nav-link" data-toggle="tab" href="#menu1">Employer Information</a>
+      </li>
+      <li class="nav-item col-md-2">
+        <a class="nav-link" data-toggle="tab" href="#menu2">Emergency Contact</a>
+      </li>
+      <li class="nav-item col-md-2">
+        <a class="nav-link" data-toggle="tab" href="#menu3">Vehicle Information</a>
+      </li>
+      <li class="nav-item col-md-2">
+        <a class="nav-link" data-toggle="tab" href="#menu4">Reference list</a>
+      </li>
+      <li class="nav-item col-md-2">
+        <a class="nav-link" data-toggle="tab" href="#menu5">Submit Form</a>
+      </li>
+    </ul>
+
+
+
+    <div class="tab-content">
+      <div id="home" class="container tab-pane active"><br>
+        <h2>Form control: input</h2>
+        <p>The form below contains two input elements; one of type text and one of type password:</p>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="usr">Surname:</label>
+              <input type="text" class="form-control" id="srname" name="username">
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="fstName">First Name:</label>
+              <input type="text" class="form-control" id="fstName" name="firstName">
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="usr">Other Names:</label>
+              <input type="othNames" class="form-control" id="othNames" name="otherNames">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="dOB">Date of Birth:</label>
+              <input type="date" class="form-control" id="dOB" name="dateOfBirth">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="emal">E-mail Address:</label>
+              <input type="email" class="form-control" aria-describedby="emailHelp" id="emal" name="email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+
+          <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="cty">City:</label>
+            <input type="text" class="form-control" id="cty" name="city">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="resdLoca">Residence Location:</label>
+            <input type="text" class="form-control" id="resdLoca" name="residenceLocation">
+          </div>
+
+            <div class="form-group col-md-4">
+              <label for="CntNum">Contact Number:</label>
+              <input type="number" class="form-control" id="CntNum" name="contactNumber" placeholder="02********">
+            </div>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="exampleFormControlSelect1">Will you be driving for a</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Corporate body (a company)</option>
+                <option>Individual</option>
+                <option>Third-Party</option>
+              </select>
+            </div>
+
+        </form>
+      </div>
+
+
+      <div id="menu1" class="container tab-pane fade"><br>
+        <form>
+          <div class="form-group">
+            <label for="inputName2">Current Employer</label>
+            <input type="text" class="form-control" id="inputName2">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="1234 Main St">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail2">Email</label>
+              <input type="email" class="form-control" id="inputEmail2" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputMobileNo2">Contact Number</label>
+              <input type="number" class="form-control" id="inputMobileNo2" placeholder="02********">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputResidence2">Location of Residence</label>
+            <input type="text" class="form-control" id="inputResidence2" placeholder="Kasoa">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity2">City</label>
+              <input type="text" class="form-control" id="inputCity2">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="duration2">How long have you been working with current employer?</label>
+              <input type="text" class="form-control" id="duration2" placeholder="3 months or 2 years">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="serviceState2">Form of Service to Employer</label>
+              <select id="serviceState2" class="form-control">
+                <option selected>Choose...</option>
+                <option>Commission</option>
+                <option>Salary</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="paymentState2">Payments to Employer are done</label>
+              <select id="paymentState2" class="form-control">
+                <option selected>Choose...</option>
+                <option>Daily (Every day)</option>
+                <option>Weekly (Every week)</option>
+                <option>Monthly (Every month)</option>
+                <option>Quarterly (Every 3 months)</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="amountPaid">Amount paid (GH¢)</label>
+              <input type="number" class="form-control" id="amountPaid" placeholder="700">
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div id="menu2" class="container tab-pane fade"><br>
+        <form>
+          <div class="form-group">
+            <label for="inputName3">Name of a relation</label>
+            <input type="text" class="form-control" id="inputName3">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress3">Address</label>
+            <input type="text" class="form-control" id="inputAddress3" placeholder="1234 Main St">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail5">Email</label>
+              <input type="email" class="form-control" id="inputEmail5" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputMobileNo5">Contact Number</label>
+              <input type="number" class="form-control" id="inputMobileNo5" placeholder="02********">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputResidence5">Location of Residence</label>
+            <input type="text" class="form-control" id="inputResidence5" placeholder="Kasoa">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity5">City</label>
+              <input type="text" class="form-control" id="inputCity5">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="relation">Relationship</label>
+              <input type="text" class="form-control" id="relation" placeholder="Brother or Mother or Wife or ...">
+            </div>
+          </div>
+
+        </form>
+        </div>
+        <div id="menu3" class="container tab-pane"><br>
+          <form>
+            <div class="form-group">
+              <label for="inputName4">Vehicle Make</label>
+              <input type="text" class="form-control" id="inputName4" placeholder="Kia or Hyundia">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputName5">Vehicle type</label>
+                <input type="text" class="form-control" id="inputName5" placeholder="Spectra or i10">
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="inputMobileNo6">Manufacture Year</label>
+                <input type="number" class="form-control" id="inputMobileNo6" placeholder="2009 or 2015 or ..">
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="inputMobileNo7">Engine Capacity</label>
+                <input type="number" class="form-control" id="inputMobileNo7" placeholder="1.6 or 2.0 or ..">
+              </div>
+            </div>
+
+            <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputName6">Insurance Type</label>
+              <input type="text" class="form-control" id="inputName6" placeholder="Comprehensive or Third party or ..">
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for="inputName7">Licence Class</label>
+              <input type="text" class="form-control" id="inputName7" placeholder="B or C or ..">
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="inputName8">Licence Plate (Car number)</label>
+              <input type="text" class="form-control" id="inputName8" placeholder="GR-****-17">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group in-line col-md-6">
+              <label for="carImg1">Front View of Car <img src="img\FV.jpg" class="img-rounded sampleCar" alt="Front View"></label>
+              <input type="file" class="form-control-file" id="carImg1">
+            </div>
+
+            <div class="form-group in-line col-md-6">
+              <label for="carImg2">Front View of Car <img src="img\BV.jpg" class="img-rounded sampleCar" alt="Front View"></label>
+              <input type="file" class="form-control-file" id="carImg2">
+            </div>
+          </div>
+
+          </form>
+        </div>
+        <div id="menu4" class="container tab-pane"><br>
+        </div>
+        <div id="menu5" class="container tab-pane"><br>
+          <button type="submit" id="firstPage" class="btn btn-primary">Next</button>
+        </div>
+      </div>
+    </div>
+
+
+
+</body>
+
+</html>
