@@ -80,10 +80,13 @@
     opacity:1;filter:"alpha(opacity=100)";
     -ms-filter:"alpha(opacity=100)";
 }
+<<<<<<< HEAD
 
 .vertical-menu {
     width: 200px; /* Set a width if you like */
 }
+=======
+>>>>>>> 5a2ec2a55d8d8ac3fc4c5a055a0cda5a5ecaf2ad
 
 body{
   background-color: #3787bf;
